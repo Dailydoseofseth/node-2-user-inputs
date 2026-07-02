@@ -8,6 +8,19 @@ Run this file with the node command:
 node dogAgeCalculator.js
 
 */
+
+// ^^^^^^^^
+// ^^^^^^^^
+// Think of it like this:
+
+// * process = an object with information about the currently running Node.js program.
+// * argv = a property of that object.
+// * process.argv = an array of strings containing the command-line arguments.
+// ^^^^^^^^
+// ^^^^^^^^
+
+// --------------------------------
+
 // process.argv is an array of everything typed in the terminal
 // Must have index [2] & [3] to get the dog name and human age, as [0] is the node command and [1] is the file name
 const dogName = process.argv[2];
@@ -54,6 +67,5 @@ if (!dogName || !humanAge) {
 // console.log(
 //   `Your dog, ${dogName}, is ${humanAge} yrs old, AND that's ${dogYears} yrs old in dog years!`,
 // );
-
 
 // Test FOR GIT PUSH
